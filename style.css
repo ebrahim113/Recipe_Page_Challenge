@@ -1,0 +1,178 @@
+:root {
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--stone-100);
+}
+
+@media (max-width: 767px) {
+    body {
+        margin: 0;
+    }
+}
+
+.recipe {
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .recipe {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .recipe {
+        padding: 0;
+    }
+
+    .recipe .content {
+        padding: 20px;
+    }
+}
+
+h2 {
+    font-family: "Young Serif";
+    font-weight: 400;
+    color: var(--brown-800);
+}
+
+li {
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+li::marker {
+    color: var(--rose-800);
+    font-weight: 700;
+    font-family: "Outfit";
+}
+
+li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+li span {
+    color: var(--stone-600);
+    font-weight: 800;
+}
+
+li:not(span) {
+    font-weight: 300;
+}
+
+.recipe img {
+    max-width: 100%;
+    border-radius: inherit;
+}
+
+@media (max-width: 767px) {}
+
+.recipe .head h2 {
+    color: black;
+    font-family: "Young Serif", sans-serif;
+    font-weight: 100;
+}
+
+.recipe .head p {
+    font-family: "Outfit", serif;
+    color: var(--stone-600)
+}
+
+.recipe .time {
+    border-radius: inherit;
+    font-family: "Outfit";
+    background-color: var(--rose-50);
+    padding: 25px;
+}
+
+.recipe .time h3 {
+    margin: 0;
+    color: var(--rose-800);
+    font-weight: 700;
+}
+
+.recipe .time ul {
+    margin: 15px -5px 0px;
+}
+
+.recipe .ingredients {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe .ingredients ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.recipe .ingredients ul li {
+    font-family: "Outfit";
+    color: var(--stone-600);
+}
+
+.recipe .instructions {
+    font-family: "Outfit";
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe .instructions ol {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.recipe .nutrition h4 {
+    font-family: "Outfit";
+    font-weight: 400;
+    color: var(--stone-600)
+}
+
+.recipe .nutrition table {
+    width: 100%;
+    font-family: "Outfit";
+}
+
+.recipe .nutrition table tbody tr td {
+    padding: 15px 25px;
+}
+
+.recipe .nutrition table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe .nutrition table tbody tr td:first-of-type {
+    color: var(--stone-900);
+    font-weight: 400;
+}
+
+.recipe .nutrition table tbody tr td:last-of-type {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+.attribution {
+    margin: 20px 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
